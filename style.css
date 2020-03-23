@@ -3,19 +3,68 @@
     padding: 0;
 }
 body {
-    background:black;
+    background:#000;
 }
 .html {
     width: 60%;
     margin: 0 auto;
     height: 100vh;
-    background: antiquewhite;
+    background: #000;
 }
 
 h1 {
     padding-top: 30px;
-    color: black;
+    color: green;
     text-align: center;
     font-size: 35px;
     text-transform: capitalize;
+}
+.img {
+    /*transform: translateX(-50%,-50%);*/
+    /*animation: Rolling 2s alternate-reverse infinite;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(50%, -50%);
+    width: 300px;
+    height: 300px;
+    transition: all 2s;
+}
+.img:hover {
+    animation: Rolling 2s alternate-reverse infinite;
+    transition: all 2s;
+}
+#color-cir {
+    width: 330px;
+    height: 280px;
+}
+
+@keyframes Rolling {
+    0% {
+        transform: rotateX(60deg);
+        color: green;
+    }
+    /*20% {*/
+    /*    transform: rotatex(120deg);*/
+    /*    color: red;*/
+
+    /*}*/
+    /*40% {*/
+    /*    transform: rotateX(180deg);*/
+    /*    color: green;*/
+    /*}*/
+    /*60% {*/
+    /*    transform: rotateX(240deg);*/
+    /*    color: white;*/
+    /*}*/
+    /*80% {*/
+    /*    transform: rotateX(300deg);*/
+    /*    color: blue;*/
+    /*}*/
+    100% {
+        transform: rotateX(360deg);
+        color: black;
+    }
+
+
 }

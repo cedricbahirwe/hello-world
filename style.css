@@ -3,68 +3,68 @@
     padding: 0;
 }
 body {
-    background:#000;
+    /*background:lightcyan;*/
+    background: url("cans-background.jpg") center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .html {
     width: 60%;
     margin: 0 auto;
-    height: 100vh;
+    height: 100vmax;
     background: #000;
 }
 
 h1 {
     padding-top: 30px;
-    color: green;
+    color: lightyellow;
     text-align: center;
     font-size: 35px;
     text-transform: capitalize;
 }
-.img {
-    /*transform: translateX(-50%,-50%);*/
-    /*animation: Rolling 2s alternate-reverse infinite;*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(50%, -50%);
+h2 {
+    padding-top: 15px;
+    color: lightblue;
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+
+}
+.one {
+    position: relative;
+    height: 65vh;
+}
+.anim-1 {
+    animation: Rolling 0.05s linear infinite;
+    margin-top: 50px;
+    position: relative;
+    top: 0%;
+    left: 34%;
     width: 300px;
     height: 300px;
-    transition: all 2s;
+    transition: all 4s;
+    /*transition: width 0.2s ease-out, background-color 2s linear;*/
+
 }
-.img:hover {
-    animation: Rolling 2s alternate-reverse infinite;
-    transition: all 2s;
+.anim-1:hover {
+    animation: Rolling 0.1s ease-in infinite;
+    transition: all 1.5s;
 }
-#color-cir {
-    width: 330px;
-    height: 280px;
+
+#light-blue-cir {
+    width: 300px;
+    height: 300px;
 }
 
 @keyframes Rolling {
-    0% {
-        transform: rotateX(60deg);
-        color: green;
+    from {
+        transform: rotateZ(0deg);
     }
-    /*20% {*/
-    /*    transform: rotatex(120deg);*/
-    /*    color: red;*/
-
-    /*}*/
-    /*40% {*/
-    /*    transform: rotateX(180deg);*/
-    /*    color: green;*/
-    /*}*/
-    /*60% {*/
-    /*    transform: rotateX(240deg);*/
-    /*    color: white;*/
-    /*}*/
-    /*80% {*/
-    /*    transform: rotateX(300deg);*/
-    /*    color: blue;*/
-    /*}*/
-    100% {
-        transform: rotateX(360deg);
-        color: black;
+    to {
+        transform: rotateZ(360deg);
     }
-
-
+}
+.two {
+    position: relative;
+    height: 65vh;
 }

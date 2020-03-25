@@ -425,6 +425,9 @@ video[poster] {
         display: block;
         width: 100%;
     }
+    .navigation {
+        height: 11vh;
+    }
 
 }
 

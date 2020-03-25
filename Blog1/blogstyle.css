@@ -88,7 +88,7 @@
 
 .profile {
     position: relative;
-    background:black;
+    background:rgba(0,0,0,.95);
     background-size: cover;
     width: 100%;
     height: 100vh;

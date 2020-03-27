@@ -67,11 +67,13 @@
 }
 
 .main h1 {
+    padding-top: 20px;
     font-size: 40px;
     text-align: center;
     text-decoration-style: solid;
+    transition: 0.3s linear;
+    color: gold;
 }
-
 
 .main_wrapper p {
     font-size: 16px;
@@ -104,12 +106,21 @@
     background-size: cover;
     padding-bottom: 30px;
 }
+.footer a {
+    text-decoration: none;
+    color: white;
+    transition: .5s all;
+}
 .footer h1 {
     padding-top: 20px;
-    color: white;
     text-align: center;
+    font-size: 50px;
     grid-column: 1/3;
     margin-bottom: 30px;
+}
+.footer h1 a:hover {
+    padding-bottom: 3px;
+    border-bottom: 3px solid white;
 }
 
 .contact-form {
@@ -294,7 +305,7 @@ input[name="r"] {
 }
 .description p {
     width: 90%;
-    margin: 8% auto;
+    margin: 5% auto;
     font-size: 22px;
     font-family: cursive;
     text-align: center !important;
@@ -390,12 +401,13 @@ video[poster] {
 
 @media screen and  (max-width: 1050px) {
     .personal {
-        height: 800px;
+        height: 850px;
     }
     .me, .description {
         width: 100%;
         float: none;
     }
+
     .description {
         text-align: center !important;
     }
@@ -415,6 +427,7 @@ video[poster] {
     .navigation ul {
         float: right;
         display: block;
+        width: 100px;
     }
     .navigation ul li {
         display: block;

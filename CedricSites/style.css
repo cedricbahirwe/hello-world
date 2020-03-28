@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    background: black;
+    color: white;
+}
+.all {
+    height: 100vh;
+    background: url("worldmap.jpg") no-repeat;
+    background-size: contain;
+}
+
+.all span {
+    width: auto;
+    margin: 0 auto;
+    border: 2px solid white;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    padding: 20px 30px;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    transform:  translate(-50%, -50%);
+    animation: hide-show 3s ease-in-out infinite;
+    opacity: .2;
+}
+
+@keyframes hide-show {
+    0%   { opacity: 0.2; }
+    50% {opacity: 1}
+    100% { opacity: 0.2; }
+
+}
+
+.second {
+    font-size: 14px;
+    margin: auto;
+    width: 95%;
+    grid-gap: 25px 50px;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+}
+.grid-item{
+    text-align: center;
+    opacity: .5;
+    transition: .85s all;
+}
+.grid-item:hover {
+    opacity: .95;
+}
+.grid-item h3 {
+    padding-bottom: 20px;
+}
+.grid-item p {
+  padding-bottom: 10px;
+
+}
+.second .grid-item:nth-child(2n) p {
+    width: 90%;
+    margin: auto;
+}
+.second grid-item:nth-child(1n) {
+    width: 95%;
+    margin: auto;
+}
+
+.third {
+    font-size: 14px;
+    width: 99%;
+    margin: auto;
+    /*grid-gap: 12px;*/
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+.grid-pic {
+    transition: .4s all;
+    margin: 7px;
+}
+.grid-pic:hover {
+    color: white;
+    opacity: .75;
+}
+.grid-pic img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 330px;
+}
+#social {
+    margin: 100px auto 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Zapf Dingbats", sans-serif;
+}

@@ -41,12 +41,12 @@
 .navigation ul li a {
     text-decoration: none;
     color: white;
-    transition: all 1.5s;
+    transition: .5s all;
 }
 .navigation ul li a:hover {
     text-decoration: underline;
     color:gold ;
-    font-style: italic;
+    font-style: normal;
 }
 .clear {
     clear: both;
@@ -120,7 +120,7 @@
 }
 .footer h1 a:hover {
     padding-bottom: 3px;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid gold;
 }
 
 .contact-form {
@@ -136,6 +136,10 @@ input {
     margin-left: 50px;
     margin-bottom: 15px;
     padding: 8px;
+}
+.contact-form input {
+    background: rgba(0,0,0,.5) !important;
+    border: 1px solid gold !important;
 
 }
 textarea {
@@ -144,7 +148,9 @@ textarea {
     margin-bottom: 15px;
     padding: 8px;
     border-radius: 0 !important;
-    border: none !important;
+    background: rgba(0,0,0,.5) !important;
+    border: 1px solid gold !important;
+    /*border: none !important;*/
     box-shadow: none;
 }
 .btn-primary {
@@ -158,9 +164,12 @@ textarea {
     text-align: center;
     color: #fff;
 }
+.btn-primary:hover {
+    background: hsla(225,2%,44%,.6) !important;
+}
 
 ::placeholder {
-    font-size: 12px;
+    font-size: 14px;
 }
 .contact-form button {
 
@@ -175,9 +184,10 @@ textarea {
     list-style-type: armenian ;
 }
 .contact-info .follow {
-    background: white;
+    background: rgba(0,0,0,.5);
     width: 80%;
     padding: 8px;
+    border: 1px solid gold;
     margin: 15px;
     font-size: 16px; !important;
 
@@ -185,14 +195,17 @@ textarea {
 
 .address li {
     /*list-style: url("location_filled_16px.png");*/
+    color: white;
     padding-left: 20px;
 }
 .telephone li {
     /*list-style: url("phone_16px.png");*/
+    color: white;
     padding-left: 20px;
 }
 .mail li {
     /*list-style: url("gmail_16px.png");*/
+    color: white;
     padding-left: 20px;
 }
 
@@ -283,16 +296,19 @@ input[name="r"] {
 }
 
 .me {
+    margin-top: 20px;
     height: 400px;
     float: left;
     width: 30%;
 }
 .me img {
+    padding-bottom: 4px;
+    padding-right: 4px;
     margin: 30px 16%;
     height: 350px;
-    box-shadow: 5px 5px 7px -3px whitesmoke;
+    box-shadow: 5px 5px 5px -3px whitesmoke;
     border-radius: 5px;
-    transition: ease-in-out .2s;
+    transition:  .3s;
 }
 .me img:hover {
     box-shadow:  none;
@@ -391,12 +407,16 @@ video[poster] {
     text-decoration: none;
     font-size: 20px;
     color: white;
+    transition: 0.5s all;
 }
 
 #but-subscribe:hover {
     box-shadow: 0 3px 10px -3px darkgray;
     border-radius: 10px;
-    transition: 0.5s all;
+    background: rgba(0,0,0,.5);
+}
+#but-subscribe a:hover {
+    color: gold;
 }
 
 @media screen and  (max-width: 1050px) {

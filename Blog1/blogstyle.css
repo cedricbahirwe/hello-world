@@ -406,7 +406,7 @@ video[poster] {
     text-align: center;
 
 }
-#mymail {
+#my-mail {
     display: inline-block;
     width: 60%;
     height: 35px;
@@ -416,7 +416,7 @@ video[poster] {
     margin-left: 200px;
     transition: ease-in-out, width .35s ease-in-out;
 }
-#mymail:focus {
+#my-mail:focus {
     width: 62%;
     outline-color: gold;
     outline-width: 5px;
@@ -433,7 +433,7 @@ video[poster] {
     transition: 0.5s all;
 }
 
-#mymail::placeholder {
+#my-mail::placeholder {
     font-size: 20px;
 }
 #but-subscribe a {
@@ -466,7 +466,6 @@ video[poster] {
         text-align: center !important;
     }
     .me img {
-
         margin: 30px 35%;
         height: 350px;
     }
@@ -477,7 +476,7 @@ video[poster] {
         display: block;
         margin: 15px auto;
     }
-    #mymail {
+    #my-mail {
         margin: auto;
         display: block;
     }

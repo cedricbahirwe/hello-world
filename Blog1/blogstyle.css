@@ -6,6 +6,7 @@
 .navigation {
     position: fixed;
     overflow: visible;
+    box-shadow: 0 3px 12px hsla(225,2%,44%,.6);
     z-index: 2;
 }
 
@@ -140,9 +141,19 @@ input {
 .contact-form input {
     background: rgba(0,0,0,.5) !important;
     border: 1px solid gold !important;
-
+    outline: none;
 }
-textarea {
+.contact-form input::placeholder {
+    font-size: 16px;
+    color: rgba(255,2555,2555,.6);
+}
+.contact-form input, textarea {
+    color: rgba(255,2555,2555,.6);
+    font-size: 16px;
+}
+/*.contact-form in*/
+.contact-form textarea {
+    font-size: 16px;
     width: 80%;
     margin-left: 50px;
     margin-bottom: 15px;
@@ -150,8 +161,12 @@ textarea {
     border-radius: 0 !important;
     background: rgba(0,0,0,.5) !important;
     border: 1px solid gold !important;
-    /*border: none !important;*/
+    outline: none;
     box-shadow: none;
+}
+.contact-form textarea::placeholder {
+    /*font-size: 18px;*/
+    color: rgba(255,2555,2555,.6);
 }
 .btn-primary {
     background: #292222 !important;
@@ -163,14 +178,15 @@ textarea {
     border: none !important;
     text-align: center;
     color: #fff;
+    transition: .3s all;
 }
 .btn-primary:hover {
     background: hsla(225,2%,44%,.6) !important;
+    outline-offset: -1px;
+    outline: gold solid 1px;
 }
 
-::placeholder {
-    font-size: 14px;
-}
+
 .contact-form button {
 
 }
@@ -190,7 +206,11 @@ textarea {
     border: 1px solid gold;
     margin: 15px;
     font-size: 16px; !important;
+    transition: 0.4s all;
 
+}
+.contact-info .follow:hover {
+    background: rgba(0,0,0,.8);;
 }
 
 .address li {

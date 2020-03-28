@@ -73,27 +73,63 @@
 .third {
     font-size: 14px;
     width: 99%;
-    margin: auto;
     /*grid-gap: 12px;*/
     display: grid;
     grid-template-columns: repeat(4,25%);
+    margin: auto auto 100px;
 }
 .grid-pic {
     transition: .4s all;
     margin: 7px;
+    /*border-radius: 10px;*/
 }
 .grid-pic:hover {
     color: white;
     opacity: .75;
+    transform: scale(1.05);
 }
 .grid-pic img {
     box-sizing: border-box;
     width: 100%;
     height: 330px;
+    border-radius: 2px;
+}
+.grid-pic img:hover {
+    border-radius: 5px;
 }
 #social {
     margin: 100px auto 30px;
     text-align: center;
     text-transform: uppercase;
     font-family: "Zapf Dingbats", sans-serif;
+}
+
+.network {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: auto;
+    padding: 66px 66px 0 0;
+    background: none;
+    list-style: outside none none;
+}
+/*.network {*/
+/*    height: auto;*/
+/*    list-style: outside none none;*/
+/*    width: 100%;*/
+/*    margin: 0;*/
+/*}*/
+.network li{
+    float: left;
+    margin: 0 8px;
+}
+.network li a:hover{color: white;opacity: 0.5;}
+
+
+@media screen and (max-width: 800px) {
+    .second , .third{
+        grid-template-columns: repeat(1,100%);
+    }
+    /*.grid-item, .grid-pic {width: 100%;}*/
 }

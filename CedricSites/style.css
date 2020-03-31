@@ -1,8 +1,10 @@
 * {
     padding: 0;
     margin: 0;
-    background: black;
     color: white;
+}
+body {
+    background: black;
 }
 .all {
     height: 100vh;
@@ -42,7 +44,7 @@
 .second {
     font-size: 14px;
     margin: auto;
-    width: 95%;
+    width: 90%;
     grid-gap: 14px 24px;
     display: grid;
     grid-template-columns: repeat(3,auto);
@@ -65,7 +67,7 @@
 
 .third {
     font-size: 14px;
-    width: 99%;
+    width: 90%;
     /*grid-gap: 12px;*/
     display: grid;
     grid-template-columns: repeat(4,auto);
@@ -89,8 +91,8 @@
 .grid-pic img:hover {
     border-radius: 5px;
 }
-#social {
-    margin: 100px auto 30px;
+.social {
+    margin: 100px auto 50px;
     text-align: center;
     text-transform: uppercase;
     font-family: "Zapf Dingbats", sans-serif;
@@ -156,6 +158,111 @@
         margin: 15px 15%;
     }
 }
-#back {
-    background: none !important;
+
+.wrapper {
+    padding: 50px 50px;
+    max-width: 1200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
 }
+
+.right {float: right !important;}
+/* Image zoom on hover + Overlay colour */
+.parent {
+    border-radius: 10px;
+    width: 45%;
+    margin: 20px;
+    height: 300px;
+    /*border: 1px solid blue;*/
+    box-shadow: 0 3px 12px hsla(225,2%,44%,.6);
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+/* Several different images */
+.bg-one {background-image: url(chris.png);}
+.bg-two {background-image: url(ABCINC.png);}
+.bg-three {background-image: url(worldmap.jpg);}
+.bg-four {background-image: url(../Animations/cans-background.jpg);}
+.bg-five {background-image: url(../Blog1/nike.jpeg);}
+.bg-six {background-image: url(../Blog1/words.jpg);}
+
+
+a {
+    display: none;
+    font-size: 35px;
+    color: gold !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline ;
+}
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+    transition: .5s ease-in-out;
+    border-radius: 10px;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    border-radius: 10px;
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.65);
+    transition: .5s ease-in-out;
+    /*background: hsla(225,2%,44%,.6);*/
+}
+.child:hover:before {
+
+    /*background: hsla(225,2%,44%,.6);*/
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .parent { width: 100%; margin: 20px 0px }
+    .wrapper { padding: 20px 20px; }
+}
+
+.hello {display: none}

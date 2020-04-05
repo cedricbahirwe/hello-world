@@ -1,0 +1,140 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: sans-serif;
+    background: #333333;
+    width: 90%;
+}
+header .first li{
+    list-style: none;
+    display: inline;
+    margin-right: 5px;
+    padding: 4px 7px;
+}
+header .first li:nth-child(1) {
+    background: gray;
+
+}
+header .first li:nth-child(2) {
+    background: gray;
+}
+header #date {
+    color: dimgray; !important;
+}
+header .first a, .second a{
+    text-decoration: none;
+    color: white;
+}
+
+.first, .second {
+    padding: 0;
+    margin: 0;
+}
+header .second li{
+    list-style: none;
+    display: inline;
+    margin-right:5px;
+    padding: 4px 7px;
+}
+header .second li:nth-child(1) {
+    background: gray;
+
+}
+header .second li:nth-child(2){background-color: darkorange;}
+
+.first {
+    width: 50%;
+    float: left;
+}
+.second {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+header {
+    padding-bottom: 30px;
+}
+.ser {
+    background-color: orangered ;
+    color: white;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.ser li{
+    font-size: 20px;
+    list-style: none url("../IMG/settings.png");
+    padding: 0;
+    text-align: left !important;
+
+}
+.ser a {
+    color: gray ;
+    text-decoration: none}
+.ser a:hover {color: black;}
+
+.ser label{
+    text-align: center;
+}
+.ser ul {
+    margin-top: 16px;
+    margin-left: -10px;
+}
+.ser input {
+    border: none;
+    border-bottom: 1px solid white  ;
+    fill: gray ;
+    outline: none;
+    height: 24px;
+    background-color: orangered;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+.ka {
+    width: 60%;
+    float: left;
+    font-size: 22px;
+    height: 54px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.ko {
+    width: 40%;
+    float: right;
+    height: 30px;
+    color: gray;
+}
+
+.country {
+    height: 70px;
+    background-color: beige;
+    text-align: center;
+}
+.country p {
+    padding-top: 8px;
+    padding-bottom: 0;
+    font-size: 12px;
+}
+.country button {
+    margin-top:0;
+    background-color: white;
+    color: orangered;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+}
+.all {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns:  repeat(3, 33.3%);
+    background-color: darkorange;
+    padding-left: 10px;
+    color: lightyellow;
+}
+.all li {
+    margin-left:-20px;
+    list-style: square;
+    font-weight:100;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="shortcut icon" type="image/png" href="../IMG/win.png">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>HTML FULL INTERNSHIP</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .head {
+        color: white;
+        background-image: url("../IMG/head.png");
+        text-align: center;
+        font-family: "Adobe Caslon Pro Bold", sans-serif;
+        height: 20%;
+        font-weight: bolder;
+    }
+
+    form {
+        border: 1px darkgray solid;
+        border-radius: 5px;
+        margin: 20px auto;
+        width: 40%;
+        text-align: center;
+    }
+
+    input {
+        display: block;
+        border:none;
+        border-bottom: darkgray solid;
+        padding: 10px 5px;
+        width: 97%;
+
+    }
+
+    #submit {
+        background-image: url("../IMG/logi.png");
+        color: white;
+        font-weight: bolder ;
+        margin: 10px 14px 10px 7px;
+        border-radius: 5px;
+        border-width: thin;
+    }
+    #submit:hover {
+        color: black;
+    }
+
+
+    .count {
+        width: 60%;
+        margin: 30px auto;
+        text-align: center;
+    }
+    .count ul {
+        list-style: none;
+        display: block;
+        padding: 3px auto;
+
+    }
+    .count li  {
+        display: inline-block;
+        padding-right: 10px;
+        list-style: none;
+        padding-bottom: 30px;
+
+
+    }
+    .count li a {
+        text-decoration: none;
+        color: steelblue;
+    }
+
+    .count li a:hover {
+        color: black;
+    }
+
+    .count #acc {
+        display: inline-flex;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-style: none;
+        padding: 15px;
+        background-image: url("../IMG/but.png");
+        border-radius: 5px;
+        margin: 10px auto;
+    }
+    .count #acc:hover {
+        color: black;
+
+    }
+
+
+
+
+
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer  li {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 20px;
+
+    }
+    .footer a {
+        text-decoration: none;
+        color: steelblue;
+    }
+
+    .footer a:hover {
+        color: black;
+        font-weight: bold;
+    }
+
+
+    footer {
+        color: gray;
+        font-family: Tahoma, cursive;
+        padding-bottom: 20px;
+    }
+
+</style>
+
+<body>
+
+<div class="tout">
+    <div class="head"><h2>face look</h2></div>
+    <div class="all">
+        <div class="main">
+            <form action="" method="post">
+                <div class="for">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Email or phone">
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+
+                </div>
+                <input type="submit" id="submit" name="submit" value="Log In">
+            </form>
+
+            <div class="count">
+                <a href="#" id="acc">Create New Account</a>
+                <ul>
+                    <li><a href="">Forgot Password?</a></li>
+                    <li><a href="">Help center</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="">English(US)</a></li>
+            <li><a href="">Chinese</a></li>
+            <li><a href="">Espagnol</a></li>
+            <li><a href="">More..</a>.</li>
+        </ul>
+        <footer>Face look &copy;  2019</footer>
+    </div>
+
+
+
+
+</div>
+
+
+</body>
+</html>

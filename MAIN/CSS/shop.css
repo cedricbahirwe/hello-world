@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+body {
+
+}
+.tit h1 {
+    display: inline;
+    font-family: cursive;
+}
+.tit, header ul {
+    display: inline;
+}
+header {
+    background: linear-gradient(to bottom left, #CFEC47 3% , red 97%);
+
+}
+.h {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 60%;
+    margin: auto;
+    padding-left: 10px;
+
+}
+header a{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+
+
+}
+header li {
+    display: inline;
+    list-style: none;
+    margin-right: 20px;
+
+}
+header a:hover{
+    color: black;
+}
+header .ulo {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.welcome {
+    width: 100%;
+    background: url("../IMG/marvel.png") no-repeat 50% bottom;
+    background-size: cover;
+    padding-top: 50%;
+    text-align: right;
+    margin: 0;
+    border: 1px solid black ;
+    box-sizing: border-box;
+}
+
+.welcome a {
+    color: white;
+    background: #004E89;
+    border-radius: 3px;
+    paddig: 5px;
+    text-decoration: none;
+    margin-top: 100px;
+}
+
+main {
+    background: black;
+    color: white;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+main h1 {
+    color: #fb2525;
+    font-family: cursive;
+    font-style: italic;
+    margin-top: 30px;
+}
+main p{
+    font-size: large;
+    font-family: cursive;
+;
+}
+
+.tasks {
+    width: 33.3%;
+    float: left;
+    background: black;
+    padding-top: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+}
+.tasks p {
+    color: darkred;
+}
+hr {
+    color: darkred;
+}
+
+.tasks img {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid darkred;
+}
+.tasks a {
+    background-color: #C22E07;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-family: 'yantramanav', sans-serif, cursive;
+}
+.tasks a:hover  {
+    color: #000000;
+}
+.tasks p {
+    color: white;
+    height: 77px;
+    margin-bottom: 20px;
+}
+.tasks h3 {
+    color: #9D1B25;
+    margin-bottom: 15px;
+
+}
+.clear {
+    clear: both;
+}
+
+.foot {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+footer {
+    background: black;
+    color: white;
+    margin: auto;
+}
+
+
+.ady img {
+    margin: 5px;
+}
+.add {
+    background: #262626;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bolder;
+}

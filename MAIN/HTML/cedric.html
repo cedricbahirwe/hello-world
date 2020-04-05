@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="shortcut icon" type="image/png" href="../IMG/win.png">
+    <titlE>Cedric Bahirwe</title>
+    <style>
+        body {
+            background: #1C1D25;
+            margin:0;
+            padding: 0;
+        }
+        .present {
+            float: left;
+            width: 30%}
+        .list {
+            float: right;
+            width: 70%}
+        .clear {
+            clear: both;
+        }
+
+        header {background: #26282F;
+
+        }
+        header ul {
+
+            padding:0;
+            margin-left: 40%;
+        }
+        header ul li {
+            display: inline;
+
+        }
+        header ul li:nth-child(1):before {
+            content: url("../IMG/home_filled_16px.png");
+        }
+        header ul li:nth-child(2):before {content: url("../IMG/person_male_16px.png");}
+        header ul li:nth-child(3):before {content: url("../IMG/hearts_16px.png");}
+        header ul li:nth-child(4):before {content: url("../IMG/books_16px.png");}
+        header ul li:nth-child(5):before {content: url("../IMG/link_16px.png");}
+
+        header ul li a{
+            color: #C5C9C8;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 0 15px 0 3px;
+            margin-right: 10px;
+            margin-left: 3px;
+        }
+        header ul li a:hover {
+            color: black;
+            font-weight: bolder;
+        }
+        header p::before {
+            content: url("../IMG/user_16px.png");
+            margin-right: 5px;
+        }
+
+        header p::after {
+            content: url("../IMG/great_britain_16px.png");
+            margin-left: 5px;;
+        }
+        h1 {
+            color: white;
+        }
+        h3 {
+            color: #7090A0;
+        }
+
+        .bother button {
+            outline: none;
+            width: 100%;
+            background: #3A81DA;border: none;
+            color: white;
+            border-radius: 3px;
+        }
+        p button{
+            padding:6px;
+            font-size: 17px;
+        }
+        p button:before {
+            content: url("../IMG/euro_16px.png");
+            padding-top: 3px;
+            line-height: 14px;
+        }
+        main {
+            text-align: center;
+            width: 700px;
+            margin: auto;
+        }
+        main #pp {
+            width: 250px;
+            border-bottom: 2px solid #3A81D8;
+            margin: 30px auto 45px auto;
+
+        }
+        p {
+            color: #818288;
+        }
+        .last {
+            width: 70%;
+            margin: auto;
+        }
+        .both {
+            width: 60%;
+            float: left;
+            box-sizing: border-box;
+            padding-right: 20px;
+        }
+        .both img  {
+            display: inline;
+            margin-right: 5px;
+            float: left;
+        }
+        #border {
+            margin-top: 40px;
+            border: 0.5px solid #818288;
+        }
+        .both p:first-of-type {
+            display: inline;
+            margin-right: 5px;
+        }
+        .bother {
+            float: right;
+            width: 40%;
+
+        }
+        .bother #order {
+            margin-top: 40px;
+            border: 0.5px solid #818288;
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="present">
+        <p>Cedric Bahirwe</p>
+    </div>
+    <div class="list">
+        <ul>
+            <li><a href="">Accueil</a></li>
+            <li><a href="">Biographie</a></li>
+            <li><a href="">Projets</a></li>
+            <li><a href="">Articles</a></li>
+            <li><a href="">Liens</a></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</header>
+<main>
+    <h1>News et activités</h1>
+    <p>Retrouvez sur une meme page l'ensemble des activités</p>
+    <p id="pp"> </p>
+</main>
+<div class="last">
+    <div class="both">
+        <h3>Édito du 10 Novembre 2019</h3>
+        <img src="../IMG/user_60px.png" alt=""><p>Hey, comment allez vous?, esperant vous reovir tres tot, je vous dit a toute</p>
+        <p id="border"></p>
+        <h3>C'est en train de se passer!</h3>
+        <p> Historique des évenements</p>
+    </div>
+    <div class="bother">
+        <h3>Votre soutien</h3>
+        <p>Pour encourager mon travail de tous les jours, me remercier, me payer un café et voir plus de lives</p>
+        <p><button onclick="alert('You have done a donation of $5 to Cedric Bahirwe in order to help him in his work. Thanks a lot')">Faire un don paypal</button></p>
+        <p id="order"></p>
+        <h3>Votre communauté</h3>
+        <p>Pour rejoindre les autres membres, vous pouvez acceder au <b>serveur Discord</b> en cliquant sur le</p>
+    </div>
+</div>
+
+
+</body>
+
+</html>

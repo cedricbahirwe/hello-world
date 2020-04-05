@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.all {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns:  50% 50%;
+
+
+}
+.all:hover {
+    cursor: pointer;
+}
+.all div {
+    width: 20px ;
+    height: 20px;
+    border-radius: 50%;
+    padding: 1px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.blue{
+    background-color: blue;
+    grid-row: 1;
+    grid-column: 1;
+    animation: blue_anim 1s alternate-reverse infinite;
+}
+@keyframes blue_anim {
+    0% {
+        top: 20px;
+        left: 20px;
+    }
+    50% {
+
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+.red {
+    background-color: red;
+    grid-row: 1;
+    grid-column: 2;
+    animation: red_anim 1s alternate-reverse infinite;
+}
+@keyframes red_anim {
+    0% {
+        top: 20px;
+        left: 0;
+    }
+    50% {
+
+    }
+    100% {
+        top: 0;
+        left: 20px;
+    }
+}
+.yellow {
+    background-color: yellow;
+    grid-row: 2;
+    grid-column: 1;
+    animation: yellow_anim 1s  alternate-reverse infinite;
+}
+@keyframes yellow_anim {
+    0% {
+        top: 0;
+        left: 20px;
+    }
+    50% {
+
+    }
+    100% {
+        top: 20px;
+        left: 0;
+    }
+}
+.green {
+    background-color: darkgreen;
+    grid-row: 2;
+    grid-column: 2;
+    animation: green_anim 1s alternate-reverse infinite;
+}
+@keyframes green_anim {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    50% {
+
+    }
+    100% {
+        top: 20px;
+        left: 20px;
+    }
+}

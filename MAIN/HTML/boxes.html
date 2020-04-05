@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="shortcut icon" type="image/png" href="../IMG/win.png">
+    <title>BOXES</title>
+    <style>
+        body {
+            margin: auto;
+            width: 500px;
+            font-family: Tahoma, sans-serif;
+        }
+        .hello {
+            border: red solid 3px;
+            padding: 10px;
+            color: white;
+            background-color: #333333;
+        }
+        .hello h1 {
+            text-decoration: underline;
+            font-weight: 800;
+            font-style: italic;
+            letter-spacing: 3px;
+            word-spacing: 10px;
+            text-transform: uppercase;
+        }
+
+
+        .bye {
+            border: gray dotted 3px;
+            margin: 20px auto;
+            padding: 10px;
+            color: gray;
+        }
+
+        .bye h1{
+            font-weight: bolder;
+        }
+        .category {
+            border: 1px solid gray;
+            border-radius: 15px;
+
+        }
+
+        .category h3 {
+            text-align: center;
+        }
+
+        .category ul {
+            list-style: none;
+            padding: 20px 22px;
+        }
+        .category a {
+            text-decoration: none;
+            color: gray;
+        }
+        .category ul li {
+            list-style-image: url("../IMG/windows.png");
+            padding-bottom: 6px;
+            border-bottom: 1px solid gray;
+        }
+        .category a:hover {
+            color: black ;
+        }
+        label {
+            display: block;
+            padding: 5px auto;
+        }
+        input[name= "name"] {
+            display: block;
+            width: 100%;
+        }
+        #submit {
+            color: white;
+            background-color: black;
+            border: none;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        form {
+            margin: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="hello">
+    <h1>Hello World</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos excepturi fugiat illo laboriosam
+        laborum pariatur rem sequi. Ad, aut consequatur dolor doloremque error fuga impedit libero modi mollitia nemo
+        numquam omnis perferendis possimus praesentium quos, repellat repudiandae sint vero. Ad aspernatur at
+        consequuntur deserunt dicta distinctio dolorem ducimus esse ex facilis fugit ipsum iste maiores, mollitia neque
+        non odio perspiciatis quas quasi quod reprehenderit sapiente sunt totam unde velit veritatis vero! Hic illo
+        laborum sapiente. A cum fugit illo.
+    </p>
+</div>
+
+<div class="bye">
+    <h1>Goodbye World</h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aspernatur, consectetur consequuntur culpa
+        ea eaque esse facere ipsa minima, numquam sint soluta. Aliquid, iste modi nobis nostrum reiciendis
+        repellendus!
+    </p>
+</div>
+
+<div class="category">
+    <h3>Categories</h3>
+    <ul>
+        <li><a href="">Category 1</a></li>
+        <li><a href="">Category 2</a></li>
+        <li><a href="">Category 3</a></li>
+        <li><a href="">Category 4</a></li>
+        <li><a href="">Category 5</a></li>
+    </ul>
+</div>
+
+<div>
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required autofocus>
+        <label for="email">Email:</label>
+        <input type="email" name="name" id="email" required>
+        <label for="textarea">Message:</label>
+        <textarea name="textarea" id="textarea"></textarea>
+
+        <div id="button">
+            <input type="submit" name="submit" id="submit">
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    background: #349;
+    color: white;
+}
+a {color: white;}
+.main-nav {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px auto;
+    width: 760px;
+}
+.main-nav li{
+    float: left;
+    background: #45a;
+    margin-right: 10px;
+    text-align: center;
+    font-family: 'Arial Narrow', cursive;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.main-nav li a {
+    border: 1px solid white;
+    text-decoration: none;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;display: block;
+    transition: all 1s ;
+}
+.main-nav li a:hover {
+    background: linear-gradient( to bottom right, gold, deepskyblue   );
+    transition: all 1s;
+    color: #349;
+
+}
+
+

@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.all {
+    width: 100%;
+    display: inline-block;
+    animation: back 3s ease-in-out infinite;
+    transition: all .45s
+}
+.magic {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,.95)),url("worldmap.jpg");
+    background-size: cover;
+}
+@keyframes back {
+    0% {
+        background-color: rgba(0, 0, 0, .2);
+    }
+    50% {
+        background-color: rgba(0, 0, 0, .7);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, .2);
+    }
+}
+
+.left,.right {
+    height: 100vh;
+}
+.left {
+    float: left;
+    width: 36%;
+    border-right: 3px solid red;
+    transition: .4s all;
+    background: rgba(255,255,255,.98);
+}
+
+.right{
+    float: inherit;
+    position: relative;
+    transition: .4s all;
+}
+.box {
+    display: inherit;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 86%;
+    height: fit-content;
+    transform: translate(-50%,-50%);
+    background: rgba(255,255,255,.5);
+    padding-bottom: 60px;
+    transition: .35s all;
+    box-shadow: 3px 3px 12px hsla(225,2%,44%,.7);
+}
+.box:hover {
+    width: 87%;
+
+    box-shadow: 0 7px 8px hsla(225,2%,44%,.86);
+}
+
+h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Helvetica Neue", sans-serif;
+    margin-top:25px;
+    margin-bottom: 30px;
+    font-size: 55px;
+    text-shadow: black -5px 3px 3px ;
+
+}
+span:nth-of-type(1) {
+    color: white;
+}
+span:nth-of-type(2) {
+    color: darkred;
+}
+p {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+
+h2 {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Helvetica Neue", sans-serif;
+    margin-top:25px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-shadow:black -1px 3px 2px ;
+    opacity: .85;
+}
+form {
+    width: 70%;
+    height: 85%;
+    margin: auto;
+    padding: 20px 10px ;
+}
+#name,#password {
+    width: 93%;
+    display: block;
+    outline: none;
+    border-radius: 7px;
+    margin: 10px 10px 20px auto;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 12px 10px;
+    color: darkgrey;
+    border: 1px solid gray;
+
+}
+#check{
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    outline: none;
+    margin: 10px 5px 10px 0;
+}
+label{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: lighter;
+    font-family: Helvetica, sans-serif;
+    margin-left: 5px;
+}
+
+input::placeholder {
+    font-size: 18px;
+}
+#name:focus, #password:focus {
+    border-color: darkred;
+}
+#check:checked {
+    border-color: yellow;
+    lighting-color: yellow;
+}
+#submit {
+    border: none;
+    outline: none;
+    margin: 30px auto;
+    padding: 15px 12px;!important;
+    background: darkred;!important;
+    color: white;
+    opacity: .99;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    border-radius: 7px;
+    transition: .35s ease-in;
+
+}
+#submit:hover {
+    opacity: .75;!important;
+}
+label:nth-of-type(3){
+    margin-top:20px ;
+}
+
+@media all and (max-width: 850px) {
+    * {
+        overflow: scroll;
+    }
+    .all {
+        height: inherit;
+        display: block;
+    }
+    .left, .right {
+        /*transition: .4s all;*/
+        float: none;
+        width: 100%;
+        height: 100vh;
+    }
+    #name,#password {
+        padding: 8px 10px;
+    }
+    .magic {
+        background: none;
+    }
+    .right {
+        background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,.95)),url("worldmap.jpg");
+        background-size: contain;
+    }
+}

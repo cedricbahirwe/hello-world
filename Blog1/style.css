@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.all {
+    height: 100vh;
+    width: 100%;
+    background: url("hsmaoke.jpg");
+    background-size: cover;
+}
+
+
+.left {
+    height: inherit;
+    text-align: center;
+    float: left;
+    width: 64%;
+    background: url("hsmaoke.jpg");
+    background-size: cover;
+}
+.left .logo {
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    margin: 20vh auto auto;
+
+}
+.left p {
+    width: 60%;
+    color: white;
+    font-size: 35px;
+    margin: 10vh auto;
+    font-weight: 100;
+}
+.left a {
+    margin-top: 50px;
+    color: white;
+    text-decoration: none ;
+    padding: 15px 60px;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 18px;
+    transition: .35s all;
+
+}
+.left a:hover {
+    background-color:rgba(0,0,0,0.34);
+
+}
+
+.right {
+    float: right;
+    width: 36%;
+    height: inherit;
+    background: rgba(255,255,255,.74);
+
+    /*position: relative;*/
+
+}
+.right #logo {
+    width: 100px;
+    height: 40px;
+    margin: 25px auto 80px;
+}
+.right h3 {
+    color: darkred;
+    font-size: 18px;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 50px;
+
+}
+.right p {
+    text-align: center;
+    width: 82%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+form {
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px ;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+::placeholder {
+    font-size: 16px;
+    color: gray;
+    font-weight: 100;
+    /*padding-left: 10px;*/
+}
+#email, #password {
+    background: transparent;
+    display: block;
+    /*width: ;*/
+    font-size: 19px;
+    font-weight: lighter;
+    padding: 10px 10px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 15em;
+}
+#email:focus, #password:focus {
+    border: 1px solid black;
+}
+#submit {
+    display: block;
+    margin-top: 20px;
+    padding: 14px 50px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 3px;
+    font-weight: lighter;
+    width: 46vh;
+    transition: .4s all;
+}
+#submit:hover {
+    /*background: transparent;*/
+    background: rgba(0,0,0,.1);
+    border: 1px solid black;
+    color: black;
+}
+form a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    border-bottom:  2px solid black;
+    transition: .35s all;
+}
+form a:hover {
+    border-bottom:  2px solid darkred;
+    border-bottom-style: dashed;
+}
+
+.tf-ring {
+    transition: all .3s;
+    animation: rotate 2s reverse infinite;
+
+}
+@keyframes rotate {
+    0% { stroke: rgba(107,201,182,.8); }
+    50% { stroke: white; }
+    100% { stroke: rgba(107,201,182,.8); }
+}
+
+@media screen and (max-width: 1080px) {
+    .all {
+        height:99vh
+    }
+    .left {
+        visibility: hidden;
+        background: none;
+        height: 0;
+    }
+    .right {
+        float: none;
+        width: 50%;
+        margin: auto;
+        height: 100vh;
+    }
+
+}

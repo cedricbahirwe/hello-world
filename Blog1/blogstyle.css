@@ -250,6 +250,7 @@ input {
     background: gold;
     height: 2px;
 }
+
 textarea {
     resize: none;
 }

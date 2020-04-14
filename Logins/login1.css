@@ -13,7 +13,7 @@
 .magic {
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,.95)),url("worldmap.jpg");
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,.95)),url("../CedricSites/worldmap.jpg");
     background-size: cover;
 }
 @keyframes back {
@@ -188,7 +188,7 @@ label:nth-of-type(3){
         background: none;
     }
     .right {
-        background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,.95)),url("worldmap.jpg");
+        background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,.95)),url("../CedricSites/worldmap.jpg");
         background-size: contain;
     }
 }

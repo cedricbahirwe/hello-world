@@ -1,17 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
 }
 body {
     margin: 0;
     padding: 0;
+    background: url("../Blog1/hsmaoke.jpg");
+    background-size: cover;
     height: 100vh;
 }
 .all {
     height: 100vh;
     width: 100%;
-    background: url("hsmaoke.jpg");
-    background-size: cover;
+    /*background: url("../Blog1/hsmaoke.jpg");*/
+    /*background-size: cover;*/
 }
 
 
@@ -20,7 +23,7 @@ body {
     text-align: center;
     float: left;
     width: 64%;
-    background: url("hsmaoke.jpg");
+    background: url("../Blog1/hsmaoke.jpg");
     background-size: cover;
 }
 .left .logo {
@@ -84,7 +87,7 @@ body {
 }
 
 form {
-    width: 60%;
+    width: 68%;
     margin: 20px auto;
     padding: 10px ;
 }
@@ -112,7 +115,8 @@ label {
     border-radius: 3px;
     margin-top: 5px;
     margin-bottom: 10px;
-    width: 15em;
+    /*width: 15em;*/
+    width: 90%;
 }
 #email:focus, #password:focus {
     border: 1px solid black;
@@ -128,7 +132,7 @@ label {
     border: none;
     border-radius: 3px;
     font-weight: lighter;
-    width: 46vh;
+    /*width: 46vh;*/
     transition: .4s all;
 }
 #submit:hover {
@@ -164,6 +168,10 @@ form a:hover {
     .all {
         height:99vh
     }
+    form {
+        background: rgba(255,255,255,.09);
+        box-shadow: 0 5px 10px #FFF ;
+    }
     .left {
         visibility: hidden;
         background: none;
@@ -175,5 +183,4 @@ form a:hover {
         margin: auto;
         height: 100vh;
     }
-
 }

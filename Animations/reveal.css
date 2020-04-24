@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.anim_me {
+    margin-top: 20%;
+    position: relative;
+    font-size: 30px;
+    animation-name: hide_me;
+    color: #000;
+    cursor: default;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.anim_me::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #e83c3c;
+    transform: scaleX(0);
+    animation-name: show_me;
+}
+
+.anim_me, .anim_me::after {
+    animation-duration: 900ms;
+}
+
+@keyframes hide_me {
+    from { clip-path: inset(0 100% 0 0)}
+    to { clip-path: inset(0 0 0 0)}
+}
+
+@keyframes show_me {
+    0%, 50% { transform-origin: 0 50%}
+    60%, 100% { transform-origin: 100% 50%}
+    60% { transform: scaleX(1)}
+    100% { transform: scaleX(0)}
+}

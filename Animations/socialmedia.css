@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    position: absolute;
+    border-radius: .5rem;
+    width: 360px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    background: linear-gradient(bottom left, #7f00ff, #e100ff);
+    transform: translate(.50%, -50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .322);
+}
+
+.shareCon {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    cursor: pointer;
+}
+
+.shareCon li {
+    list-style: none;
+}
+
+.shareCon li a {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #D8E2DC;
+    background: #fff;
+    text-align: center;
+    transform: translateY(10px);
+    transition: .3s;
+    opacity: 0;
+    color: #262626;
+    margin: 0 5px 5px;
+
+}
+
+.card:hover .shareCon li a {
+    transform: translateY(50px);
+    opacity: 1;
+}
+
+.card .shareCon li a .fa {
+    font-size: 24px;
+    line-height: 40px;
+    transition: .5s;
+}
+
+.card:hover .shareCon li:nth-child(1) a {
+    transition-delay: .2s;
+}
+.card:hover .shareCon li:nth-child(2) a {
+    transition-delay: .4s;
+}
+.card:hover .shareCon li:nth-child(3) a {
+    transition-delay: .6s;
+}
+
+
+.fa-instagram:hover {
+    color: #bc2a8d;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+.fa-twitter:hover {
+    color: #00aced;
+}

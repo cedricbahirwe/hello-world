@@ -1,0 +1,55 @@
+body {
+    background: #8cc051;
+    font-family: "Mult", Consolas, monospace;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    margin-top: 50%;
+    letter-spacing: 2px;
+    color: #fff;
+    float: left;
+    position: relative;
+    font-weight: 800;
+    font-size: 20px;
+    padding-right: 3px;
+}
+p span {
+    width: 100%;
+    position: absolute;
+    background: #8cc051;
+    top: 0;
+    right: 0;
+    border-left: 0.1em solid transparent;
+    animation: typing 4s steps(20) forwards, cursor 1s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 100%
+    }
+    to {
+        width: 0
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: white;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 100%
+    }
+    to  {
+        width: 0
+    }
+}
+@keyframes cursor {
+    50% {
+        border-color: white;
+    }
+}

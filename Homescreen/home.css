@@ -8,10 +8,8 @@
 
 .all {
     height: 80vh;
-    /*width: 100%;*/
-    background: rgba(0, 0, 0, .3) url("home.jpeg");
     background-size: contain;
-    background-repeat: repeat-x;
+    background: rgba(0, 0, 0, .3) url("home.jpeg") repeat-x;
     padding-top: 30px;
     position: relative;
 }
@@ -148,19 +146,16 @@ form {
 
     .all {
         background: none;
-
     }
 
     body {
         background: rgba(0, 0, 0, .3) url("home.jpeg");
         background-position: bottom;
-
     }
 }
 @media screen and (max-width: 600px)  {
     form {
         width: 60%;
     }
-
 }
 

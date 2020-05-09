@@ -123,11 +123,11 @@ h3 {
     height: 34px;
     margin-left: 0;
 }
-p a {
-    color: white;
-    font-weight: 300;
-    text-decoration: none;
-}
+/*p a {*/
+/*    color: white;*/
+/*    font-weight: 300;*/
+/*    text-decoration: none;*/
+/*}*/
 
 select {
     height: 44px;
@@ -147,6 +147,10 @@ select {
     .footer #mail {
     width: 89%;
     }
+    .footer  #mail:focus {
+        width: 88%
+    }
+
     .all {
         background-size: cover;
     }

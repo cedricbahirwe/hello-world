@@ -1,10 +1,22 @@
-document.getElementsByTagName("h1")[0].style.fontSize = "10vw";
-// alert('Hello everyone')
-var pasta = "Spaghetti"; // ES5 syntax
+// import checkAvailability from "library.js"
+const {checkAvailability} = require('./library.js');
+// const checkAvailability = checkAvailability
 
-const meat = "Pancetta"; // ES6 syntax
+const onFulfill = (itemsArray) => {
+    console.log(`Items checked: ${itemsArray}`);
+    console.log(`Every item was available from the distributor. Placing order now.`);
+};
 
-let sauce = "Eggs and cheese"; // ES6 syntax
+const onReject = (rejectionReason) => {
+    console.log(rejectionReason);
+};
 
-// Template literals, like the one below, were introduced in ES6
-const carbonara = `You can make carbonara with ${pasta}, ${meat}, and a sauce made with ${sauce}.`;
+// Write your code below:
+let checkSunglasses = checkAvailability('sunglasses', 'Favorite Supply Co.')
+
+let checkPants = checkAvailability('pants', 'Favorite Supply Co.')
+let checkBags = checkAvailability('bags', 'Favorite Supply Co.')
+
+Promise.all([checkSunglasses,checkPants, checkBags]).then(onFulfill).catch(onReject)
+
+

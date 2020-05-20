@@ -1,22 +1,61 @@
-// import checkAvailability from "library.js"
-const {checkAvailability} = require('./library.js');
-// const checkAvailability = checkAvailability
-
-const onFulfill = (itemsArray) => {
-    console.log(`Items checked: ${itemsArray}`);
-    console.log(`Every item was available from the distributor. Placing order now.`);
-};
-
-const onReject = (rejectionReason) => {
-    console.log(rejectionReason);
-};
-
-// Write your code below:
-let checkSunglasses = checkAvailability('sunglasses', 'Favorite Supply Co.')
-
-let checkPants = checkAvailability('pants', 'Favorite Supply Co.')
-let checkBags = checkAvailability('bags', 'Favorite Supply Co.')
-
-Promise.all([checkSunglasses,checkPants, checkBags]).then(onFulfill).catch(onReject)
 
 
+
+
+
+
+
+alert("Hello welcome🤑🤑🤑")
+
+const jsonButton = document.querySelector('#generate');
+const buttonContainer = document.querySelector('#buttonContainer');
+const display = document.querySelector('#displayContainer');
+const collection = ["Another", "More", "Next", "Continue", "Keep going", "Click me", "A new one"];
+
+const generateJson = () => {
+    const xhr = new XMLHttpRequest();
+    xhr.responseType = 'json';
+
+    xhr.onreadystatechange = () => {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            renderResponse(xhr.response);
+            changeButton();
+        }
+    }
+    xhr.open('GET', 'https://jsonplaceholder.typicode.com/users');
+    xhr.send();
+    alert("Request")
+}
+
+const formatJson = (resJson) => {
+    resJson = JSON.stringify(resJson);
+    let counter = 0;
+    return resJson.split('')
+        .map(char => {
+            switch (char) {
+                case ',':
+                    return `,\n${' '.repeat(counter * 2)}`;
+                case '{':
+                    counter += 1;
+                    return `{\n${' '.repeat(counter * 2)}`;
+                case '}':
+                    counter -= 1;
+                    return `\n${' '.repeat(counter * 2)}}`;
+                default:
+                    return char;
+            }
+        })
+        .join('');
+}
+
+const renderResponse = (jsonResponse) => {
+    const jsonSelection = Math.floor(Math.random() * 10);
+    display.innerHTML = `<pre>${formatJson(jsonResponse[jsonSelection])}</pre>`;
+}
+
+const changeButton = () => {
+    const newText = Math.floor(Math.random() * 7);
+    jsonButton.innerHTML = `${collection[newText]}!`;
+}
+
+jsonButton.addEventListener('click', generateJson);

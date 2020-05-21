@@ -1,6 +1,21 @@
 body {
-    font-family: system-ui;
     background: #f06d06;
     color: white;
     text-align: center;
+}
+
+#generate {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(0,0,0,.7);
+    font-size: 20px;
+    color: white;
+}
+
+#displayContainer {
+    text-align:left;!important
+    color: black;
+}
+pre {
+    font-size: 25px;
 }

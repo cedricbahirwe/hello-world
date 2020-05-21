@@ -1,16 +1,9 @@
 
-
-
-
-
-
-
-alert("Hello welcome🤑🤑🤑")
-
 const jsonButton = document.querySelector('#generate');
 const buttonContainer = document.querySelector('#buttonContainer');
 const display = document.querySelector('#displayContainer');
 const collection = ["Another", "More", "Next", "Continue", "Keep going", "Click me", "A new one"];
+const colors = ['yellow', 'blue', 'green', 'orange', 'black', 'gray' , 'purple']
 
 const generateJson = () => {
     const xhr = new XMLHttpRequest();
@@ -24,7 +17,6 @@ const generateJson = () => {
     }
     xhr.open('GET', 'https://jsonplaceholder.typicode.com/users');
     xhr.send();
-    alert("Request")
 }
 
 const formatJson = (resJson) => {
@@ -56,6 +48,8 @@ const renderResponse = (jsonResponse) => {
 const changeButton = () => {
     const newText = Math.floor(Math.random() * 7);
     jsonButton.innerHTML = `${collection[newText]}!`;
+    jsonButton.style.backgroundColor = colors[newText];
+    jsonButton.style.outlineColor = colors[newText];
 }
 
 jsonButton.addEventListener('click', generateJson);

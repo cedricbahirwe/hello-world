@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facelook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" type="text/css" href="../CSS/facelook.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext" rel="stylesheet">
+</head>
+<body>
+<div class="home">
+    <div id="header">
+        <h1>Facelook</h1>
+    </div>
+
+    <form action="send.php" method="post">
+        <P><label for="username">Username:</label>
+            <input type="text" placeholder="username" id="username" minlength="8" maxlength="16" required/>
+        </P>
+
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="password" id="password" name="password" pattern="[a-zA-Z0-9]+" required>
+        </p>
+        <p>
+            <input type="submit"  id="log"  value="Log in">
+        </p>
+        <br><br><br>
+    </form>
+
+    <footer><a href="">Sign Up for Facelook</a></footer>
+    <br>
+    <p>
+        <button><a href="">?</a></button>
+        <br>
+        <br>
+    </p>
+
+</div>
+
+</body>
+</html>

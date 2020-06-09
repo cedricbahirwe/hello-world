@@ -1,5 +1,5 @@
 :root {
-    --main-height: 65vh;
+    --main-height: 85vh;
 }
 * {
     margin: 0;
@@ -67,7 +67,7 @@ h2 {
 }
 .two {
     position: relative;
-    height: 65vh;
+    height: var(--main-height);
     background: #fff;
 }
 
@@ -87,7 +87,7 @@ h2 {
 }
 .three {
     position: relative;
-    height: 65vh;
+    height: var(--main-height);
     background: lightcyan;
 }
 
@@ -105,11 +105,7 @@ h2 {
     animation: Rolling 0.1s linear infinite;
     transition: all 1.5s;
 }
-.three {
-    position: relative;
-    height: 65vh;
-    background: lightcyan;
-}
+
 
 .anim-3 {
     animation: Rolling 0.5s linear infinite;
@@ -129,15 +125,15 @@ h2 {
 
 .four {
     position: relative;
-    height: 70vh;
+    height: 100vh;
     background: #ffffff;
 }
-
+git
 .anim-4 {
     animation: Rolling 0.5s linear infinite;
     margin-top: 50px;
     position: relative;
-    top: 0%;
+    top: 20px;
     left: 34%;
     width: 300px;
     height: 300px;

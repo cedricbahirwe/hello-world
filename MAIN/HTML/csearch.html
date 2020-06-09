@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Csearch</title>\
+    <style>
+        h1 {
+            font-family: sans-serif;
+            font-size: 50px;
+
+        }
+        .first{
+            color: blue;
+        }
+        .sec {
+            color: orange;
+
+        }
+        .third {
+            color: darkgreen;
+        }
+        .last {
+            color: red;
+        }
+        h1 div {
+            display: inline;
+        }
+        span {
+            letter-spacing: normal;
+            word-spacing: normal;
+            margin: 0;
+            padding: 0;
+        }
+        .all {
+            text-align: center;
+            width:70%;
+            margin: 50px auto;
+        }
+        .google {
+            width: 892px;
+            height: 90px;
+            background-image: url("../IMG/searchbar.png");
+            position: absolute;
+            margin: 130px auto;
+        }
+
+        #what {
+            background-image:url("../IMG/lo.png");
+            font-style: oblique;
+            width: 700px;
+            position: relative;
+            top: 17px;
+            left: -20px;
+            padding: 20px 18px;
+            font-size: 20px;
+            border-radius: 50px;
+            border-width: inherit;
+            outline: none;
+        }
+
+
+        p {
+            font-size: 30px;
+            transition: .5s;
+            animation: p_anim 4s alternate-reverse infinite;
+        }
+        @keyframes p_anim  {
+
+            25%{color: orange;}
+            50%{color: darkgreen;}
+            75%{color: red;}
+            100%{color: blue;}
+        }
+
+        p:hover {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="all">
+    <h1>
+        <div class="title">
+            <div class="first">C</div>
+            <div class="sec">s</div>
+            <div class="third">e</div>
+            <div class="last">a</div>
+            <div class="first">r</div>
+            <div class="third">c</div>
+            <div class="sec">h</div>
+        </div>
+    </h1>
+    <p>Structural search engine for Google</p>
+    <div class="google">
+        <div class="search">
+            <label for="what"></label>
+            <input type="text"name="what" id="what" placeholder="Search Csearch or type a URL">
+
+            <div class="text">
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="../IMG/win.png">
+    <link rel="stylesheet" href="../CSS/allmath.css">
+    <title>Math Objects Full Tutorial</title>
+</head>
+<body>
+<h1>Math Objects Full</h1>
+
+<h2>Math.floor()</h2>
+<!--floor description-->
+<label>
+    <textarea class="style_info">Math.floor() rounds a number down to the nearest integer:</textarea>
+</label>
+<br/>
+<!--floor ex:-->
+<div class="style_info" style="color:black;font-weight:normal;">
+    var num = 10456 / 30;<br/>
+    var floor_ing = Math.floor(num);
+</div>
+<!--floor ex: output-->
+<button type="button" onclick="floor()">Show Output</button>
+<h4>Before (num) : <b id="fir_bfr"></b></h4>
+<h4>After (floor_ing) : <b id="fir_aftr"></b></h4>
+
+
+<h2>Math.random()</h2>
+<!--random description-->
+<label>
+<textarea class="style_info" style="height:95px;">Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive):
+</textarea>
+</label>
+<br/>
+<!--random ex:-->
+<div class="style_info" style="color:black;font-weight:normal;">
+    var x = Math.random();<br/>
+    var y = Math.floor(x * 100);
+</div>
+<!--random ex: output-->
+<button type="button" onclick="random()">Genarate Random Numbers</button>
+<h4>random(x) (0 to 1) : <b id="sec_bfr"></b></h4>
+<h4>random with floor(y) (0 to 100) : <b id="sec_aftr"></b></h4>
+
+
+<h2>Math.min() And Math.max()</h2>
+<!--min & max description-->
+<label>
+    <textarea class="style_info" style="height:100px;">Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments:</textarea>
+</label>
+<br/>
+<!--min & max ex:-->
+<div class="style_info" style="color:black;font-weight:normal;">
+    var x = Math.min(40 , 29 , -10 , -20 , 5);<br/>
+    var y = Math.max( 20 , 32 , 5 , -20 , 50);<br/>
+</div>
+<!--min & max ex: output-->
+<button type="button" onclick="min_max()">Show Output</button>
+<h4>Math.min(x) : <b id="thir_bfr"></b></h4>
+<h4>Math.max(y) : <b id="thir_aftr"></b></h4>
+
+<h2>Math.round()</h2>
+<!--round description-->
+<label>
+    <textarea class="style_info">Math.round() rounds a number to the nearest integer:</textarea>
+</label>
+<br/>
+<!--round ex:-->
+<div class="style_info" style="color:black;font-weight:normal;height:100px;">
+    var a =  12.4 ;<br/>
+    var b = 99.8;<br/>
+    var c = Math.round(a);<br/>
+    var d = Math.round(b);<br/>
+</div>
+<!--round ex: output-->
+<button type="button" onclick="round()">Show Output</button>
+<h4>Before : <b id="four_bfr"></b></h4>
+<h4>After : <b id="four_aftr"></b></h4>
+
+
+
+<h2>Math.ceil()</h2>
+<!--ceil description-->
+<label>
+    <textarea class="style_info">Math.ceil() rounds a number UP to the nearest integer:</textarea>
+</label>
+<br/>
+<!--ceil ex:-->
+<div class="style_info" style="color:black;font-weight:normal;height:100px;">
+    var a = 10.3;<br/>
+    var b = 99.1;<br/>
+    var x = Math.ceil(a);<br/>
+    var y = Math.ceil(b);<br/>
+</div>
+<!--ceil ex: output-->
+<button type="button" onclick="ceil()">Show Output</button>
+<h4>Before : <b id="fif_bfr"></b></h4>
+<h4>After : <b id="fif_aftr"></b></h4>
+
+
+
+
+<h2>Math.abs()</h2>
+<!--abs description-->
+<label>
+    <textarea class="style_info">Math.abs() method returns the absolute of a number</textarea>
+</label>
+<br/>
+<!--abs ex:-->
+<div class="style_info" style="color:black;font-weight:normal;height:100px;">
+    var a = -23.3;<br/>
+    var b = -49.45;<br/>
+    var x = Math.abs(a);<br/>
+    var y = Math.abs(b);<br/>
+</div>
+<!--abs ex: output-->
+<button type="button" onclick="abs()">Show Output</button>
+<h4>Before : <b id="six_bfr"></b></h4>
+<h4>After : <b id="six_aftr"></b></h4>
+
+
+<h2>Math.pow()</h2>
+<!--pow description-->
+<div class="style_info" style="height:90px;">
+    Math.pow() method returns the value of <i>x</i> to the Power of <i>y</i> (<i>x<sup>y</sup></i>).<br/>
+    <i style="margin-left:25%;">Math.pow( x , y );</i>
+</div>
+<br/>
+<!--pow ex:-->
+<div class="style_info" style="color:black;font-weight:normal;">
+    var a = Math.pow( 2 , 5);<br/>
+    var b = Math.pow(5 , 3);<br/>
+</div>
+<!--pow ex: output-->
+<button type="button" onclick="pow()">Show Output</button>
+<h4>pow(2 , 5 ) : <b id="seven_bfr"></b></h4>
+<h4>pow(5 , 3) : <b id="seven_aftr"></b></h4>
+
+
+<h2>Math.sqrt()</h2>
+<!--sqrt description-->
+<label>
+    <textarea class="style_info" style="height:100px;">Math.sqrt() method returns the square root of the given number.if the number is negative,NaN is returned.</textarea>
+</label>
+<br/>
+<!--sqrt ex:-->
+<div class="style_info" style="color:black;font-weight:normal;height:100px;">
+    var a = 100;<br/>
+    var b = -20;<br/>
+    var x = Math.sqrt(a);<br/>
+    var y = Math.sqrt(b);
+</div>
+<!--sqrt ex: output-->
+<button type="button" onclick="sqrt()">Show Output</button>
+<h4>Before  : <b id="eight_bfr"></b></h4>
+<h4>After   : <b id="eight_aftr"></b></h4>
+
+
+
+<h2>Math.PI</h2>
+<!--PI description-->
+<label>
+<textarea class="style_info" style="height:120px;">Math.PI (&pi;) Property returns the radio of the circle's area to the square of its Radius, approxiamately 3.14159 .
+</textarea>
+</label>
+<br/>
+<!--PI ex:-->
+<div class="style_info" style="color:black;font-weight:normal;height:30px;width:200px;">
+    var x = Math.PI;
+</div>
+<!--PI ex: output-->
+<button type="button" onclick="pi()">Show Output</button>
+<h4>Math.PI : <b id="nine_bfr"></b></h4>
+
+
+<h2>Math.sin()</h2>
+<!--sin description-->
+<div class="style_info" style="height:100px;">
+    Math.sin() method returns the Sine of a Number.<br/>
+    <i>Note :-</i> This mathod returns a numeric value <i>between -1 and 1</i> .
+</div>
+<br/>
+<!--sin ex:-->
+<div class="style_info" style="color:black;font-weight:normal;">
+    var x = Math.sin(1);<br/>
+    var y = Math.sin(Math.PI);<br/>
+</div>
+<!--sin ex: output-->
+<button type="button" onclick="sin()">Show Output</button>
+<h4>sine 1 (x) : <b id="sin_bfr"></b></h4>
+<h4>sine PI (y) : <b id="sin_aftr"></b></h4>
+
+
+<h2>Math.cos()</h2>
+<!--cos description-->
+<div class="style_info" style="height:100px;">
+    Math.cos() method returns the  Cosine of a Number.
+    <i>Note :- </i> This method returns a numeric value <i>between -1 and 1</i> . witch represents the cosine of the angle.
+</div>
+<br/>
+<!--cos ex:-->
+<div class="style_info" style="color:black;font-weight:normal;">
+    var x = Math.cos(0);<br/>
+    var y = Math.cos(Math.PI);
+</div>
+<!--cos ex: output-->
+<button type="button" onclick="cos()">Show Output</button>
+<h4>cosine 0 (x) : <b id="cos_bfr"></b></h4>
+<h4>cosine PI (y) : <b id="cos_aftr"></b></h4>
+
+
+
+<h2>Math.tan()</h2>
+<!--tan description-->
+<div class="style_info">
+    Math.tan() method returns a number that represents the tangent of an angle.
+</div>
+<br/>
+<!--tan ex:-->
+<div class="style_info" style="color:black;font-weight:normal;">
+    var x = Math.tan(1);<br/>
+    var y = Math.tan(90);
+</div>
+<!--tan ex: output-->
+<button type="button" onclick="tan()">Show Output</button>
+<h4>tangent 1 (x) : <b id="tan_bfr"></b></h4>
+<h4>tangent 90 (y) : <b id="tan_aftr"></b></h4>
+
+
+
+<h2>Math.asin()</h2>
+<!--asin description-->
+<div class="style_info" style="height:115px;font-size:18px;">
+    Math.asin() method returns the arcsine of a number  as a numeric value between -PI/2 and PI/2 radians.<br/>
+    <i>Note :- </i> if the parameters are outside the range -1 to 1 , the browser will return NaN.
+</div>
+<br/>
+<!--asin ex:-->
+<div class="style_info" style="color:black;font-weight:normal;">
+    var x = Math.asin(1);<br/>
+    var y = Math.asin(0);<br/>
+    var z = Math.asin(-1);
+</div>
+<!--asin ex: output-->
+<button type="button" onclick="asin()">Show Output</button>
+<h4>asin 1 (x) : <b id="asin_fir"></b></h4>
+<h4>asin 0 (y) : <b id="asin_sec"></b></h4>
+<h4>asin -1 (z) : <b id="asin_thir"></b></h4>
+
+
+<h2>Math.acos()</h2>
+<!--acos description-->
+<div class="style_info" style="height:110px;font-size:18px;">
+    Math.acos() method returns the arccosine if a number as a numeric value <i>between 0 and PI radians</i>.<br/>
+    if the parameters are outside the <i>range -1 to 1</i> ,the browser will return NaN.
+</div>
+<br/>
+<!--acos ex:-->
+<div class="style_info" style="color:black;font-weight:normal;">
+    var x = Math.acos(1);<br/>
+    var y = Math.acos(-1);<br/>
+    var z = Math.acos(-5);
+</div>
+<!--acos ex: output-->
+<button type="button" onclick="acos()">Show Output</button>
+<h4>arccosine 1 (x) : <b id="acos_fir"></b></h4>
+<h4>arccosine -1 (y) : <b id="acos_sec"></b></h4>
+<h4>arccosine -5 (z) : <b id="acos_thir"></b></h4>
+
+
+
+<h2>Math.atan()</h2>
+<!--atan description-->
+<div class="style_info">
+    Math.atan() method returns the arctangent of a number as a numeric value <i>between -PI/2 and PI/2 radians</i>.
+</div>
+<br/>
+<!--atan ex:-->
+<div class="style_info" style="color:black;font-weight:normal;">
+    var x = Math.atan(1);<br/>
+    var y = Math.atan(0);<br/>
+    var z = Math.atan(-1);
+</div>
+<!--atan ex: output-->
+<button type="button" onclick="atan()">Show Output</button>
+<h4>arctangent () : <b id="atan_fir"></b></h4>
+<h4>arctangent () : <b id="atan_sec"></b></h4>
+<h4>arctangent () : <b id="atan_thir"></b></h4>
+
+
+<h2>Math.atan2()</h2>
+<!--atan2 description-->
+<div class="style_info" style="height:170px;font-size:17px;">
+    Math.atan2() method returns the Arctangent of the <u>quatient of it's Arguments</u>..<br/>
+    The angle returned is a Numeric value <u>between PI and -PI and represents the counterclockwise Angle</u> in radians(not degrees) between the <u>positive X axis and the point (x , y)</u>.<br/>
+    <span style="font-size:23px;margin-left:20%;color:black;">Math.atan2(x , y);</span>
+
+</div>
+<br/>
+<!--atan2 ex:-->
+<div class="style_info" style="color:black;font-weight:normal;">
+    var a = Math.atan2(3 , 2);<br/>
+    var b = Math.atan2(5 , 5);<br/>
+    var c = Math.atan2(6 , 5);
+</div>
+<!--atan2 ex: output-->
+<button type="button" onclick="atan2()">Show Output</button>
+<h4>arctangent2 (a) : <b id="atan2_fir"></b></h4>
+<h4>arctangent2 (b) : <b id="atan2_sec"></b></h4>
+<h4>arctangent2 (c) : <b id="atan2_thir"></b></h4>
+
+
+<h2>Math.E ( Euler )</h2>
+<!--E description-->
+<div class="style_info">
+    Math.E property returns the Euler's and the base of natural logarithms, approximately 2.718.
+</div>
+<br/>
+<!--E ex:-->
+<div class="style_info" style="color:black;font-weight:normal;height:40px;">
+    var x = Math.E;
+</div>
+<!--E ex: output-->
+<button type="button" onclick="E()">Show Output</button>
+<h4>Euler (x) : <b id="E_fir"></b></h4>
+
+
+<h2>Math.exp</h2>
+<!--exp description-->
+<div class="style_info" style="height:130px;">
+    Math.E method returns the value of Ex , where <u>E is Euler's Number</u> (approximately 2.7183) and <u>X is the number passed to it</u>.<br/>
+    <span style="font-size:20px;margin-left:20%;background-color:#00F318;">Math.exp( X );</span>
+
+</div>
+<br/>
+<!--exp ex:-->
+<div class="style_info" style="color:black;font-weight:normal;height:40px;">
+    var x = Math.exp(1);
+</div>
+<!--exp ex: output-->
+<button type="button" onclick="exp()">Show Output</button>
+<h4>exp 1 (x) : <b id="exp_fir"></b></h4>
+
+<h2>Math.log()</h2>
+<!--log description-->
+<div class="style_info">
+    Math.log() method returns the natural logarithm ( base E ) of a number.
+</div>
+<br/>
+<!--log ex:-->
+<div class="style_info" style="color:black;font-weight:normal;">
+    var x = Math.log(1);<br/>
+    var y = Math.log(0);
+</div>
+<!--log ex: output-->
+<button type="button" onclick="M_log()">Show Output</button>
+<h4>log 1 (x) : <b id="log_fir"></b></h4>
+<h4>log 0 (y) : <b id="log_sec"></b></h4>
+
+<h2>Math.LOG2E</h2>
+<!--LOG2E description-->
+<div class="style_info">
+    Math.LOG2E property returns the <br/>
+    <u>base-2 logarithm of E</u>,(approximately 1.442) .
+</div>
+<br/>
+<!--LOG2E ex:-->
+<div class="style_info" style="color:black;font-weight:normal;height:40px;">
+    var x = Math.LOG2E;
+</div>
+<!--LOG2E ex: output-->
+<button type="button" onclick="LOG2E()">Show Output</button>
+<h4>LOG2E (x) : <b id="LOG2E_fir"></b></h4>
+
+
+
+<h2>Math.LOG10E</h2>
+<!--LOG10E description-->
+<div class="style_info">
+    Math.LOG10E property returns the <u>base-10 logarithm of E</u> , (approximately 0.434 .)
+</div>
+<br/>
+<!--LOG10E ex:-->
+<div class="style_info" style="color:black;font-weight:normal;height:40px;">
+    var x = Math.LOG10E;
+</div>
+<!--LOG10E ex: output-->
+<button type="button" onclick="LOG10E()">Show Output</button>
+<h4>LOG10E (x) : <b id="LOG10E"></b></h4>
+
+
+<h2>Math.LN2</h2>
+<!--LN2 description-->
+<div class="style_info">
+    Math.LN2 property returns the natural logarithm of 2, approximately 0.693 .
+</div>
+<br/>
+<!--LN2 ex:-->
+<div class="style_info" style="color:black;font-weight:normal;height:40px;">
+    var x = Math.LN2;
+</div>
+<!--LN2 ex: output-->
+<button type="button" onclick="LN2()">Show Output</button>
+<h4>LN2 (x) : <b id="LN2_fir"></b></h4>
+
+
+
+<h2>Math.LN10</h2>
+<!--LN10 description-->
+<div class="style_info">
+    Math.LN10 property returns the natural logarithm of 10 , approximately 0.302 .
+</div>
+<br/>
+<!--LN10 ex:-->
+<div class="style_info" style="color:black;font-weight:normal;height:40px;">
+    var x = Math.LN10;
+</div>
+<!--LN10 ex: output-->
+<button type="button" onclick="LN10()">Show Output</button>
+<h4>LN10 (x) : <b id="LN10_fir"></b></h4>
+
+
+
+<h2>Math.SQRT1_2</h2>
+<!--SQRT1_2 description-->
+<div class="style_info">
+    Math.SQRT1_2 property returns the square root of 1/2, approximately 0.707 .
+</div>
+<br/>
+<!--SQRT1_2 ex:-->
+<div class="style_info" style="color:black;font-weight:normal;height:40px;">
+    var x = Math.SQRT1_2;
+</div>
+<!--SQRT1_2 ex: output-->
+<button type="button" onclick="SQRT1_2()">Show Output</button>
+<h4>SQRT1_2 () : <b id="SQRT1_2_fir"></b></h4>
+
+
+
+<h2>Math.SQRT2</h2>
+<!--SQRT2 description-->
+<div class="style_info">
+    Math.SQRT2 property returns the square root of 2, approximately 1.414 .
+</div>
+<br/>
+<!--SQRT2 ex:-->
+<div class="style_info" style="color:black;font-weight:normal;height:40px;">
+    var x = Math.SQRT2 ;
+</div>
+<!--SQRT2 ex: output-->
+<button type="button" onclick="SQRT2()">Show Output</button>
+<h4>SQRT2 (x) : <b id="SQRT2_fir"></b></h4>
+
+<h2 style="color:yellow;">Other Math Objects Resources</h2>
+<h3 style="display:inline-block;color:cyan;">Websites</h3><br/>
+<button><a href="https://www.w3schools.com/js/js_math.asp" >W3schools</a></button><br/>
+<button><a href="https://www.tutorialspoint.com/javascript/javascript_math_object.htm" >Tutorialspoint</a></button><br/>
+<button><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math" >Mozilla developers</a></button><br/>
+<button><a href="https://www.w3resource.com/javascript/object-property-method/math.php" >W3resource</a></button><br/>
+<button><a href="https://www.afterhoursprogramming.com/tutorial/javascript/math-object/" >Afterhoursprogramming</a></button><br/>
+
+
+<h3 style="display:inline-block;color:cyan;">Youtube Videos</h3><br/>
+<button><a href="https://m.youtube.com/watch?v=6Px7q0xN4FI" >13min Video Tutorial</a></button><br/>
+<button><a href="https://m.youtube.com/watch?v=F30jLIqGQpo" >6min Video Tutorial</a></button><br/>
+<button><a href="https://m.youtube.com/watch?v=cvCe2Q3Y4lA" >6min Video Tutorial</a></button><br/>
+
+<div class="footer">
+    <b style="margin-left:22%;background-color:#ffccaa">Special Thanks</b><br/>
+    &nbsp;&nbsp;&nbsp;Sololearn<br/>
+    &nbsp;&nbsp;&nbsp;Html Code Play app<br/>
+    &nbsp;&nbsp;&nbsp;Javascript pro app<br/>
+    &nbsp;&nbsp;&nbsp;W3schools.com
+</div>
+<h1 style="font-size:18px;">Created By Cedric Bahirwe</h1>
+<script src="../JS/allmath.js"></script>
+</body>
+</html>

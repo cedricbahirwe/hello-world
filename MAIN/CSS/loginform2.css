@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #34495e;
+    font-family: sans-serif;
+}
+.logg {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    background-color: #191919;
+}
+.logg h1 {
+    display: inline;
+    color: white;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 3px solid #2ecc71;
+    margin-bottom: 20px;
+}
+form {
+    margin: 20px auto;
+}
+input {
+    font-size: 18px ;
+    padding: 14px 10px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+}
+label {
+    display: block;
+    border-bottom: 2px solid gray;
+    margin-bottom: 10px;
+}
+input[type="submit"] {
+    display: block;
+    text-align: center;
+    background: none;
+    border: 2px solid #2ecc71;
+    margin-top: 20px;
+    padding: 5px 120px;
+}

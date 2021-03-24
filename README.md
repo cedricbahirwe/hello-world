@@ -1,4 +1,4 @@
-# hello-world
+# hello-s
 All the ideas in one place
 Come share with me ...
 I'm just Beginning, but I'm not Beginner

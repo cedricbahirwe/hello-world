@@ -5,6 +5,23 @@
     --mainRed: #A40000;
 }
 
+#summary p {
+    font-size: 1.3em;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 5;  /* number of lines to show */
+   -webkit-box-orient: vertical;
+   text-align: justify;
+
+}
+
+@media(max-width: 700px) {
+    #summary p {
+        -webkit-line-clamp: 5;
+        text-align: left;
+    }
+}
 
 body {
     background-color: rgb(21, 21, 23); 
@@ -38,6 +55,9 @@ h1, h2, h3 {
 #project-description {
     font-size: 1.35em;
     font-weight: 400;
+    font-family: proxima-nova, sans-serif;
+font-style: normal;
+font-weight: 200;
     padding: 16px;
     border-radius: 10px;
     box-shadow: 1.5px 1.5px 3.0px rgb(225, 225, 255),

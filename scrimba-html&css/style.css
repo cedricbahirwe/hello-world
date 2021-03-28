@@ -1,19 +1,31 @@
-
 :root {
-    --mainfg: #f4f4f4;  
+    --mainfg: #f4f4f4;
     --mainBg: rgb(21, 21, 23);
     --mainRed: #A40000;
+}
+
+body {
+    background-color: #151517;
+    color: #f4f4f4;
+    width: 60%;
+    margin: auto;
+}
+
+h1,
+h2,
+h3 {
+    color: #f4f4f4;
 }
 
 #summary p {
     font-size: 1.3em;
     overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   -webkit-line-clamp: 5;  /* number of lines to show */
-   -webkit-box-orient: vertical;
-   text-align: justify;
-
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+    text-align: justify;
 }
 
 @media(max-width: 700px) {
@@ -23,47 +35,35 @@
     }
 }
 
-body {
-    background-color: rgb(21, 21, 23); 
-    color: #f4f4f4;
-}
-h1, h2, h3 {
-    color: #f4f4f4;
-}
 #header {
     display: flex;
     align-items: center;
 }
 
-/* #header-title {} */
-#profile-pic {
 
-    width: 120px;
-    height: 120px;
+/* #header-title {} */
+
+#profile-pic {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     padding: 0.5em;
     background-color: rgba(0, 0, 51, 0.15);
     margin: .5em;
-
 }
 
-#blog-description, #project-description {
-
+#blog-description,
+#project-description {
     min-width: 400px;
 }
 
 #project-description {
     font-size: 1.35em;
     font-weight: 400;
-    font-family: proxima-nova, sans-serif;
-font-style: normal;
-font-weight: 200;
     padding: 16px;
     border-radius: 10px;
-    box-shadow: 1.5px 1.5px 3.0px rgb(225, 225, 255),
-             -1.5px -1.5px 3.0px #ffffff;
+    box-shadow: 1.5px 1.5px 3.0px rgb(225, 225, 255), -1.5px -1.5px 3.0px #ffffff;
 }
-
 
 span#author {
     color: green;
@@ -76,7 +76,6 @@ span#author {
     font-family: 'Courier New', Courier, monospace;
 }
 
-
 #blog-note {
     font-size: 18px;
     font-weight: 400;
@@ -85,15 +84,12 @@ span#author {
     border-radius: 8px;
     background-color: rgb(26, 26, 28);
     border-style: solid;
-    border-width: 1px;    
+    border-width: 1px;
     border-color: var(--mainfg);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
-
 
 #note-label {
     font-size: 1.2em;
     color: var(--mainRed);
-    /* font-weight: bolder; */
-    /* fore */
 }

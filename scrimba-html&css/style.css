@@ -1,56 +1,27 @@
-
-
-#header {
-    display: flex;
-}
-#profile-pic {
-
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    padding: 0.5em;
-    background-color: rgba(0, 0, 51, 0.15);
-    margin: .5em;
-
+body {
+    margin: 0;
 }
 
-#blog-description, #project-description {
+header {
+    text-align: center;
+    background-color: #333;
+    color: #e4e4e4;
+    padding: 25px 0;
+    margin-bottom: 25px;
+}
 
-    min-width: 400px;
+main {
+    background-color: #e4e4e4;
     max-width: 600px;
+    padding: 25px;
+    border: solid 5px red;
+    margin: 0 auto;
 }
 
-#project-description {
-    font-size: 1.35em;
-    font-weight: 400;
-    padding: 16px;
-    border-radius: 15px;
-    box-shadow: 10px 10px 10px rgb(225, 225, 255);
-    border-radius: 20px;
-    background: #ffffff;
-    box-shadow:  15px 15px 30px rgb(225, 225, 255),
-             -15px -15px 30px #ffffff;
-}
-
-
-span#author {
-    color: green;
-}
-
-#blog-subtitle {
-    font-size: 14px;
-    font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
-
-}
-
-
-#blog-description {
-    font-size: 1.3em;
-    font-weight: 400;
-    padding: 20px;
-    border-radius: 20px;
-    background: #ffffff;
-    box-shadow: inset 20px 20px 60px #d9d9d9,
-            inset -20px -20px 60px rgb(225, 225, 255);
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #e4e4e4;
+    padding: 25px;
+    margin-top: 25px;
 }

@@ -25,25 +25,31 @@ header {
 
 .intro {
     width: 500px;
-    margin: 0 auto;
+    margin: 100px auto;
+    text-align: center;
 }
 
 .my-skills {
     background-color: #1D3C41;
     color: white;
     padding: 30px 0;
+    text-align: center;
 }
 
 .columns {
     width: 800px;
+    margin: auto;
     display: flex;
     /* background-color: blueviolet; */
 }
 
+
+/* .my-skills {} */
+
 .column {
-    text-align: center;
     padding: 10px;
-    background-color: #00000030;
+    /* background-color: #00000010; */
+    background-color: #588C9420;
     border-radius: 15px;
     margin: 5px;
 }

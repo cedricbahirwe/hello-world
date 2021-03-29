@@ -7,9 +7,17 @@ header {
 }
 
 main {
-    background-color: e4e4e4;
-    width: 600px;
+    background-color: #e4e4e4;
+    max-width: 600px;
     padding: 25px;
     border: solid 5px red;
     margin: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #e4e4e4;
+    padding: 25px 0;
+    margin-top: 25px;
 }

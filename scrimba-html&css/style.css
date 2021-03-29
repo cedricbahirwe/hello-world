@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+    background-color: #333;
+    color: #e4e4e4;
+    padding: 25px 0;
+    margin-bottom: 25px;
+}
+
+main {
+    background-color: e4e4e4;
+    width: 600px;
+    padding: 25px;
+    border: solid 5px red;
+    margin: auto;
+}

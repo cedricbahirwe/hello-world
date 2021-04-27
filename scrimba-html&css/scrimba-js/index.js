@@ -1,5 +1,1 @@
-let fName = "Cedric"
-let lName = "Bahirwe"
-
-
-console.log(`${fName} ${lName}`)
+let products = ['toilet paper', 'bottled water', 'sanitizer']

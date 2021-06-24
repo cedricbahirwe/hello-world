@@ -7,7 +7,7 @@
     position: fixed;
     overflow: visible;
     box-shadow: 0 3px 12px hsla(225,2%,44%,.6);
-    z-index: 2;
+    z-index: 2; 
 }
 
 .navigation {
